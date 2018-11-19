@@ -14,7 +14,6 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   for(let i = str.length; i >= 0; i--){
-   
   string = str.slice(0,i);
   result.push(string);
 }
@@ -121,8 +120,20 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-  // Solution code here...
-};
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i]%2==0){
+        arr.splice(i, 1);
+    }
+}
+return arr;}
+
+// function remove_odd_numbers(arr){
+//   for (let i = 0; i < arr.length; i++) {
+//       if(!(arr[i]%2==0)){
+//           arr.splice(i, 1);
+//       }
+//   }
+//   return arr;}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -136,7 +147,9 @@ removeLastCharacters('Gregor', 9) returns ''
 ------------------------------------------------------------------------------------------------ */
 
 const removeLastCharacters = (str, numberOfCharacters) => {
-  // Solution code here...
+  if (numberOfCharacters > -1) {
+    str.splice(index, 1);
+  }
 };
 
 
