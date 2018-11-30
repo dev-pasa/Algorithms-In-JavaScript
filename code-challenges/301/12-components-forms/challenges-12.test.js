@@ -150,6 +150,28 @@ let lowestWeeklyTemperatureData = [
 
 const lowestWeeklyAverage = (weather) => {
   // Solution code here...
+  arrSums = [];
+  // var newArray = weather.map(arr => arr.reduce((sum, item) => sum += item, 0));
+  // arrSums.push(newArray);
+  // let min = arrSums.reduce((a,b) => Math.min(a,b));
+  // return min;
+
+  weather.forEach(function(e){
+    var sum = 0;
+    e.forEach(function(e1){
+      sum += e1; 
+    });
+    arrSums.push(sum);
+  });
+  // return Math.min(...arrSums)
+  let minVal = arrSums[0];
+  for(let i = 0; i < arrSums.length; i++){
+    if(arrSums[i]< minVal){
+      minVal = arrSums[i]
+    }
+  }
+  return minVal;
+  
 }
 
 /* ------------------------------------------------------------------------------------------------
