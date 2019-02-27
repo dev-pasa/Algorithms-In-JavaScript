@@ -1,5 +1,3 @@
-# data-structures-and-algorithms
+# Learning algorithms in JavaScript
 
-Throughout this course, I will complete a set of daily code challenges. Each set will contain up to ten problems.
-
-The daily challenges will be posted by the instructor at the end of lecture every day. 
+- Practice a set of coding challenges and try to solve them in JavaScript
